@@ -12,6 +12,12 @@
 <body oncontextmenu="return false;">
   <div id="myapp"></div>
   <script>
+    export default defineConfig({
+  build: {
+    base: './',
+    // Other build configuration options...
+  },
+})
     var app = Elm.Main.init({
       node: document.getElementById('myapp'),
       flags: {
